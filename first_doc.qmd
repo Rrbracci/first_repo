@@ -30,3 +30,9 @@ The `echo: false` option disables the printing of code (only output is displayed
 ```{r}
 plot(cars)
 ```
+
+```{r}
+plot(cars)
+```
+
+## Litt klassisk R
