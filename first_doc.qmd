@@ -36,3 +36,9 @@ plot(cars)
 ```
 
 ## Litt klassisk R
+{r}
+plot(cars)
+```{r}
+View(iris)
+```
+
