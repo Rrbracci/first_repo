@@ -1,6 +1,6 @@
 ---
 title: "firstdoc"
-format: html
+format: pdf
 editor: visual
 ---
 
@@ -36,11 +36,6 @@ plot(cars)
 ```
 
 ```{r}
-df1 <- data.frame(x = 1:3, y = letters[1:3], 
-                 z = df)
-```
-
-```{r}
 dim(cars)
 summary(cars)
 ```
@@ -57,43 +52,4 @@ summary(lm1)
 ```{r}
 plot(cars)
 abline(lm1)
-```
-
-```{r}
-start_stupid_fun <- function(x1 = 0, n = 10) {
-# initialise x
-x = vector(mode = "numeric", length = n)
-x[1] = x1
-
-for (i in seq_along(x[-1])) {
-  x[i + 1] = x[i] + 1
-}
-print(x)
-}
-```
-
-```{r}
-head_and_tail <- function(x) {
-  c(head(x), tail(x))
-}
-```
-
-```{r}
-head_and_tail(cars)
-```
-
-```{r}
-head_and_tail <- function(x, n=3L) {
-res = rbind(rep('Head',length(names(x))),
-        head(x, n = n),
-        rep('*-*-*',length(names(x))), 
-        rep('Tail',length(names(x))), 
-        tail(x, n = n)
-        )
-as_tibble(res)
-}
-```
-
-```{r}
-head_and_tail(cars)
 ```
